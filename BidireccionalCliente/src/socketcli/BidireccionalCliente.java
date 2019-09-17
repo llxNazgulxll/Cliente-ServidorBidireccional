@@ -101,9 +101,9 @@ public class BidireccionalCliente {
         String ip = escaner.nextLine();
         if (ip.length() <= 0) ip = "localhost";
 
-        mostrarTexto("Puerto: [5050 por defecto] ");
+        mostrarTexto("Puerto: [3000 por defecto] ");
         String puerto = escaner.nextLine();
-        if (puerto.length() <= 0) puerto = "5050";
+        if (puerto.length() <= 0) puerto = "3000";
         cliente.ejecutarConexion(ip, Integer.parseInt(puerto));
         cliente.escribirDatos();
     }
