@@ -110,9 +110,9 @@ public class BidireccionalServidor {
         BidireccionalServidor s = new BidireccionalServidor();
         Scanner sc = new Scanner(System.in);
 
-        mostrarTexto("Ingresa el puerto [5050 por defecto]: ");
+        mostrarTexto("Ingresa el puerto [3000 por defecto]: ");
         String puerto = sc.nextLine();
-        if (puerto.length() <= 0) puerto = "5050";
+        if (puerto.length() <= 0) puerto = "3000";
         s.ejecutarConexion(Integer.parseInt(puerto));
         s.escribirDatos();
     }
